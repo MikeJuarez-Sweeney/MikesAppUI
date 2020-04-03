@@ -1,25 +1,17 @@
 import React from "react";
 
-export default class FetchNames extends React.Component {
-  state = {
-    firstName: "",
-    lastName: "",
-  };
+export const FetchNames = () => {
 
-  async componentDidMount() {
+  const componentDidMount = async() => {
     const url = "http://localhost:8081/";
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
     console.log(data);
   }
-
-  render() {
-    return (
-      <div>
-        {/* <div>{this.state.data.firstName}</div>
-        <div>{this.state.lastName}</div> */}
-      </div>
-    );
-  }
+  return(
+    <button onClick={componentDidMount}>PRESS ME</button>
+  )
 }
+
+export default FetchNames
