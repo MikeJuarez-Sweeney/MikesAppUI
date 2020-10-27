@@ -145,7 +145,6 @@ export const MainPage = () => {
           <Table className={classes.table} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="left">ID</TableCell>
                 <TableCell align="left">First Name</TableCell>
                 <TableCell align="left">Last Name</TableCell>
                 <TableCell align="left">Phone Number</TableCell>
